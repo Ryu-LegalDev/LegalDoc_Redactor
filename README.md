@@ -55,8 +55,8 @@ HWPX 파일
 ollama pull gemma3:4b
 
 # 2. 저장소 클론
-git clone https://github.com/your-username/legaldoc-redactor.git
-cd legaldoc-redactor
+git clone https://github.com/Ryu-LegalDev/LegalDoc_Redactor.git
+cd LegalDoc_Redactor
 
 # 3. Python 패키지 설치
 pip install -r requirements.txt
