@@ -9,7 +9,7 @@
 | 모드 | 입력 | 출력 | 특징 |
 |------|------|------|------|
 | **HWPX Redactor** | `.hwpx` | `_제거완.hwpx` | 원본 형식 보존, 이미지 OCR, 브랜딩 제거 |
-| **HWPX → MD Redactor** | `.hwpx` | `_제거완.md` | [kordoc](https://github.com/nicejean/kordoc)으로 MD 변환 후 개인정보 제거, 빠른 처리 |
+| **HWPX → MD Redactor** | `.hwpx` | `_제거완.md` | [kordoc](https://github.com/chrisryugj/kordoc)으로 MD 변환 후 개인정보 제거, 빠른 처리 |
 
 ## 주요 기능
 
@@ -26,7 +26,7 @@
 - **HWPX 구조 보존**: 한글에서 정상적으로 열리는 형식 유지
 
 ### HWPX → MD Redactor
-- **[kordoc](https://github.com/nicejean/kordoc)** (npm 패키지)를 활용하여 HWPX를 Markdown으로 변환
+- **[kordoc](https://github.com/chrisryugj/kordoc)** (npm 패키지)를 활용하여 HWPX를 Markdown으로 변환
 - 변환된 MD에서 개인정보를 탐지/제거하여 `_제거완.md` 출력
 - 이미지 처리가 없어 HWPX Redactor 대비 처리 속도가 빠름
 - Obsidian, Claude 등 외부 AI 도구에 바로 활용 가능한 형식
@@ -178,7 +178,7 @@ LegalDoc_Redactor/
 
 - **Python 3.10+**
 - **Ollama** + **gemma3:4b** — 로컬 LLM (한국어 NER)
-- **[kordoc](https://github.com/nicejean/kordoc)** — HWPX → Markdown 변환 (npm 패키지)
+- **[kordoc](https://github.com/chrisryugj/kordoc)** — HWPX → Markdown 변환 (npm 패키지)
 - **EasyOCR** — 이미지 내 한국어 텍스트 좌표 탐지 (HWPX 모드)
 - **Pillow** — 이미지 마스킹 및 텍스트 렌더링 (HWPX 모드)
 - **lxml** — HWPX XML 파싱 및 수정 (HWPX 모드)
@@ -189,6 +189,6 @@ MIT License
 
 ## 크레딧
 
-- [kordoc](https://github.com/nicejean/kordoc) — HWPX를 Markdown으로 변환하는 CLI 도구. HWPX → MD Redactor 모드의 문서 변환에 활용됩니다.
+- [kordoc](https://github.com/chrisryugj/kordoc) — HWPX를 Markdown으로 변환하는 CLI 도구. HWPX → MD Redactor 모드의 문서 변환에 활용됩니다.
 - [Ollama](https://ollama.com/) — 로컬 LLM 실행 환경
 - [gemma3:4b](https://ollama.com/library/gemma3) — Google의 경량 LLM 모델
