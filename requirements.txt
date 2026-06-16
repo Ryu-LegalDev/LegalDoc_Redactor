@@ -1,0 +1,4 @@
+lxml
+ollama
+easyocr
+Pillow
